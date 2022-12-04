@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact</title>
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="icon" type="iamge/x-icon" href="images/favicon.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <a class = "skip-nav-link" href="#main-content">skip to main content</a>
+        <header>
+            <ul class="logo-nav">
+            <li>
+            <div class="logo">
+                <a href="index.html"><img class="logo" src="images/logo_white.png" alt="Boston restaurant logo"></a>            </div>
+            </li>
+            <li>
+                <nav>
+                <ul class="menu">
+                    <li><a class="nav" href="index.html">HOME</a></li>
+                    <li><a class="nav" href="restaurants.html">RESTAURANTS</a></li>
+                    <li><a class="nav" href="gallery.html">GALLERY</a></li>
+                    <li><a class="nav" id="currentpage" href="contact.html">CONTACT</a></li>
+                </ul>
+            </li>
+            </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+        <h1>Contact</h1>
+        <p>
+            When you think of Boston's restaurant scene, you probably think of seafood:
+            lobster rolls, clam chowder, crab cakes or old favorites like baked beans and Boston cream pie. Sure, traditional comfort food has its rightful place in our hearts and appetites.
+        </p>
+        <p>
+            Feel free to submit a message below.
+        </p>
+
+        <form action="https://formspree.io/f/xeqdbyzn" method="POST">
+            <label>
+            Your email:
+            <input type="email" name="email">
+            </label>
+            <label>
+            Your message:
+                <textarea name="message"></textarea>
+            </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+        </form>
+        <img id="lobster" src="images/lobster.JPG" alt="BU Lobster">
+        </main>
+
+        <aside>
+            <h1>Boston Accent Video</h1>
+                <figure>
+                    <video class="video"
+                        autoplay="false"
+                        width="640"
+                        height="360"
+                        id="videoplayer"
+                        preload="none"
+                        src="video/boston.mp4">
+                    </video>
+                    <figcaption>[Boston Accent Trailer]</figcaption>
+                </figure>
+                <button id="mute">Mute</button><br>
+                <label for="slider">Volume</label>: 0
+                <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
+                <div>Volume is: <span id="volume"></span><br><br></div>
+                <div class="options">
+                    <button id="play">Play Video</button>
+                    <button id="pause">Pause Video</button>
+                </div>
+            </aside>
+
+        <footer>
+            <p>
+                Mingxi Wu &copy; 2022, All rights reserved.
+            </p>
+        </footer>
+
+
+    </body>
+        <script src="js/video.js"></script>
+</html>
