@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #EAC5C5;
+    background-color: #fae8e8;
     margin-left: 2.5%;
     margin-right: 2.5%;
     width: 95%;
@@ -57,10 +57,10 @@ ul.menu a{
 }
 
 
-a.nav:hover{color:aliceblue;}
+a.nav:hover{color:#0b1e63;}
 
 a#currentpage{
-    background-color: lightcyan;
+    background-color: #cacddb;
 }
 
 h1{
